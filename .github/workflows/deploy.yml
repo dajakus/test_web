@@ -24,13 +24,11 @@ jobs:
       run: hugo --minify --verbose
 
     - name: Deploy via SFTP
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      uses: ataylorme/ssh-deploy@v2.1.5
       with:
-        server: ${{ secrets.SERVER_HOST }}
+        server-ip: ${{ secrets.SERVER_HOST }}
         username: ${{ secrets.SERVER_USER }}
         password: ${{ secrets.SERVER_PASSWORD }}
-        protocol: sftp
-        port: 22                    
-        local-dir: ./public          
-        server-dir: /public_html     
-        dangerous-clean-slate: false 
+        remote-path: /public_html
+        local-path: ./public
+        port: 22
