@@ -31,4 +31,4 @@ jobs:
         password: ${{ secrets.SERVER_PASSWORD }}
         protocol: sftp
         source: "public/*"
-        target: "/public_html"
+        target: "/var/www/html/public_html"
