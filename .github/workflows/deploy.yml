@@ -15,12 +15,10 @@ jobs:
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v3
       with:
-        hugo-version: 'latest'
+        hugo-version: '0.125.0'
 
     - name: Build Hugo Site
       run: hugo --minify
-      with:
-        hugo-version: '0.125.0'
 
     - name: Deploy to Custom Server
       uses: appleboy/scp-action@v0.1.7
