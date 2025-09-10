@@ -28,9 +28,9 @@ jobs:
       with:
         username: ${{ secrets.SERVER_USER }}
         password: ${{ secrets.SERVER_PASSWORD }}
-        server: "31.147.204.99"
+        server: '31.147.204.99'
         port: 22
-        remote_path: "/public_html"
-        local_path: "./public/*"
+        remote_path: '/var/www/app/public_html'
+        local_path: './public/*'
         sftp_only: true
 
