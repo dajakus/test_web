@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Hugo Portfolio Theme # Website name
-baseURL: 'https://zavodi.fesb.unist.hr/zen/' # Website URL
+baseURL: 'https://djelatnici.fesb.unist.hr/~dajakus' # Website URL
 
 ############################
 ## PAGE OPTIONS
