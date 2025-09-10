@@ -31,7 +31,6 @@ jobs:
         server: '31.147.204.99'
         port: 22
         remote_path: '/var/www/app/public_html'
-        local_path: './public/index.html'
+        local_path: './public/*'
         sftp_only: true
-        verbose: true
 
